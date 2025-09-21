@@ -1,4 +1,27 @@
 /* estilos */
+html{
+    padding: 0;
+    margin: 0;
+}
 .imagen-tarjeta {
   width: 250px;
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    padding: 3.0rem;
+    margin: 0;
+}
+.tarjeta {
+    display: inline-flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    padding: 3.0rem;
+    gap: 1.0rem;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin: 0;
 }
