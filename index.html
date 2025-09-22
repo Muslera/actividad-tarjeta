@@ -4,19 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Carlos Muslera</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Italianno&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header></header>
     <main>
       <div class="main-container">
-        <div class="tarjeta">
-          <!-- foto de un "retrato" que me hizo mi hijo en Lego-->
-          <img class="imagen-tarjeta" src="img/carlos-muslera.jpg" alt="" />
-          <h2>Carlos Muslera</h2>
-          <!-- y es un privilegio-->
-          <p>¡Soy estudiante en UTN!</p>
-          <button onclick="saludar()">¡Saludame!</button>
+        <div class="tarjeta lgPad mdGap">
+          <div class="first-container mdGap">
+            <!-- foto de un "retrato" que me hizo mi hijo en Lego-->
+            <img class="imagen-tarjeta" src="img/carlos-muslera.jpg" alt="" />
+        </div>
+        <div class="second-container mdGap">
+            <h2 class="xlgText">Carlos Muslera</h2>
+            <!-- y es un privilegio-->
+            <p class="xlgText">¡Soy estudiante en UTN!</p>
+            <button class="hi-button lgText" onclick="saludar()">¡Saludame!</button>
+          </div>
         </div>
       </div>
     </main>

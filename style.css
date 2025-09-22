@@ -1,27 +1,132 @@
 /* estilos */
-html{
-    padding: 0;
-    margin: 0;
+/* General */
+html {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
 }
-.imagen-tarjeta {
-  width: 250px;
+/* Fonts */
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
 }
-.main-container{
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
-    padding: 3.0rem;
-    margin: 0;
+body {
+  background-color: #b26c67;
+}
+p {
+  font-family: "Italianno", cursive;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+}
+button {
+  font-weight: 100;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* Contenedores */
+.main-container,
+.first-container,
+.second-container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
 }
 .tarjeta {
-    display: inline-flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
-    padding: 3.0rem;
-    gap: 1.0rem;
-    border: 1px solid gray;
-    border-radius: 5px;
-    margin: 0;
+  display: inline-flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  padding: 3rem;
+  gap: 1rem;
+  background-color: #9b4a44;
+  border: 1px solid white;
+  border-radius: 10px;
+  margin: 0;
+  color: white;
+}
+/* elementos */
+img.imagen-tarjeta {
+  width: 250px;
+  border-radius: 5px;
+  border: 1px solid white;
+}
+button.hi-button {
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+/* utilidades */
+.lgText {
+  font-size: 1.6rem;
+}
+.xlgText {
+  font-size: 2.8rem;
+}
+.lgPad {
+  padding: 3rem;
+}
+.mdPad {
+  padding: 3rem;
+}
+.smPad {
+  padding: 1rem;
+}
+.smGap {
+  gap: 1rem;
+}
+.mdGap {
+  gap: 1.6rem;
+}
+.lgGap {
+  gap: 2.8rem;
+}
+
+/* Media Queries */
+@media (min-width: 480px) {
+/* Contenedores */
+  .tarjeta {
+    margin: auto;
+  }
+  /* utilidades */
+  .lgText {
+    font-size: 1.6rem;
+  }
+  .xlgText {
+    font-size: 2.8rem;
+  }
+  .lgPad {
+    padding: 3rem;
+  }
+  .mdPad {
+    padding: 3rem;
+  }
+  .smPad {
+    padding: 1rem;
+  }
+  .smGap {
+    gap: 1rem;
+  }
+  .mdGap {
+    gap: 1.6rem;
+  }
+  .lgGap {
+    gap: 3.2rem;
+  }
+}
+@media (min-width: 640px) {
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 960px) {
+}
+@media (min-width: 1024px) {
 }
