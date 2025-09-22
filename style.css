@@ -17,7 +17,7 @@ h4 {
   padding: 0;
 }
 body {
-  background-color: #b26c67;
+  background-color:whitesmoke;
 }
 p {
   font-family: "Italianno", cursive;
@@ -45,26 +45,36 @@ button {
   flex-direction: column;
   align-content: center;
   align-items: center;
-  padding: 3rem;
-  gap: 1rem;
-  background-color: #9b4a44;
+  filter: drop-shadow(2px 4px 6px black);
+  background-color: gainsboro;
   border: 1px solid white;
   border-radius: 10px;
   margin: 0;
-  color: white;
+  color:rgb(77, 77, 77);
 }
+.tarjeta:hover {
+  transform: scale(1.15);
+  transition-duration: 0.7s;
+}
+
 /* elementos */
 img.imagen-tarjeta {
   width: 250px;
-  border-radius: 5px;
+  border-radius: 50%;
   border: 1px solid white;
+  filter: grayscale();
 }
 button.hi-button {
-  background-color: black;
+  background-color: rgb(77, 77, 77);
+  border: white 5px solid;
   color: white;
-  padding: 10px;
+  padding: 15px;
+  border-radius: 3px;
 }
 /* utilidades */
+.text-center{
+  text-align: center;
+}
 .lgText {
   font-size: 1.6rem;
 }
@@ -74,27 +84,15 @@ button.hi-button {
 .lgPad {
   padding: 3rem;
 }
-.mdPad {
-  padding: 3rem;
-}
-.smPad {
-  padding: 1rem;
-}
-.smGap {
-  gap: 1rem;
-}
 .mdGap {
   gap: 1.6rem;
-}
-.lgGap {
-  gap: 2.8rem;
 }
 
 /* Media Queries */
 @media (min-width: 480px) {
-/* Contenedores */
+  /* Contenedores */
   .tarjeta {
-    margin: auto;
+    margin: 20px auto;
   }
   /* utilidades */
   .lgText {
@@ -125,8 +123,32 @@ button.hi-button {
 @media (min-width: 640px) {
 }
 @media (min-width: 768px) {
+  /* Contenedores */
+  .tarjeta {  
+    flex-direction: row;
+    margin: 20px auto;
+
+  }
+.tarjeta:hover {
+  transform: scale(1.05);
+}
+  .lgPad {
+    padding: 4rem;
+  }
+  .mdGap {
+    gap: 2.0rem;
+  }
 }
 @media (min-width: 960px) {
+.tarjeta:hover {
+  transform: scale(1.15);
+}
+  .lgPad {
+    padding: 5rem;
+  }
+  .mdGap {
+    gap: 3.0rem;
+  }
 }
 @media (min-width: 1024px) {
 }
